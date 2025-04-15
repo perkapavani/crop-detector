@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Processing and Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        select, input, button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Preprocessing and Classification</h1>
+        <div class="form-group">
+            <label for="excelInput">Upload Excel File:</label>
+            <input type="file" id="excelInput" accept=".xlsx, .xls">
+        </div>
+        
+        <!-- Preprocessing Section -->
+        <div class="form-group">
+            <label for="preprocessing">Preprocessing Options:</label>
+            <select id="preprocessing">
+                <option value="normalization">Normalization</option>
+                <option value="missing_data">Handling Missing Data</option>
+                <option value="discretization">Discretization</option>
+            </select>
+            <button onclick="applyPreprocessing()">Apply Preprocessing</button>
+            <div id="preprocessingResult" class="result"></div>
+        </div>
+        
+        <!-- Classification Section -->
+        <div class="form-group">
+            <label for="classifier">Select Classifier:</label>
+            <select id="classifier">
+                <option value="id3">ID3</option>
+                <option value="apriori">Apriori</option>
+                <option value="fp_growth">FP-Growth</option>
+            </select>
+            <button onclick="applyClassifier()">Apply Classifier</button>
+            <div id="classificationResult" class="result"></div>
+        </div>
+    </div>
+
+    <script>
+        function applyPreprocessing() {
+            const preprocessingOption = document.getElementById("preprocessing").value;
+            const classifierOption = document.getElementById("classifier").value;
+
+            let formData = new FormData();
+            formData.append("file", document.getElementById("excelInput").files[0]);
+            formData.append("preprocessing", preprocessingOption);
+            formData.append("classifier", classifierOption);
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.classification_result) {
+                    document.getElementById("classificationResult").innerText = 
+                        `Classification result: ${data.classification_result}`;
+                } else {
+                    document.getElementById("preprocessingResult").innerText = 
+                        `Preprocessing applied: ${preprocessingOption}`;
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        function applyClassifier() {
+            applyPreprocessing();
+        }
+    </script>
+</body>
+</html>

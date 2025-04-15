@@ -1,0 +1,101 @@
+Crop Type,Leaf Color,Spots on Leaves,Humidity (%),Temperature (°C),Disease Name,Severity Level
+Wheat,Yellow,No,86,28,Healthy,High
+Rice,Yellow,Yes,67,24,Septoria Leaf Spot,None
+Wheat,Brown,Yes,71,25,Healthy,Medium
+Tomato,Green,Yes,62,35,Leaf Rust,None
+Potato,Yellow,Yes,63,28,Sheath Rot,High
+Tomato,Yellow,Yes,85,23,Healthy,Low
+Rice,Green,Yes,68,21,Tomato Mosaic Virus,High
+Potato,Brown,Yes,77,31,Sheath Rot,High
+Rice,Brown,No,74,18,Bacterial Blight,High
+Rice,Yellow,No,75,23,Bacterial Blight,Low
+Wheat,Brown,No,61,27,Sheath Rot,Low
+Potato,Brown,Yes,89,31,Septoria Leaf Spot,High
+Wheat,Brown,Yes,86,30,Late Blight,None
+Potato,Green,No,63,19,Sheath Rot,High
+Maize,Brown,No,70,27,Late Blight,None
+Wheat,Brown,Yes,88,24,Leaf Rust,None
+Rice,Brown,No,63,31,Bacterial Blight,None
+Tomato,Green,Yes,74,33,Sheath Rot,High
+Potato,Green,No,80,28,Late Blight,Low
+Wheat,Green,No,63,26,Septoria Leaf Spot,Medium
+Potato,Brown,Yes,84,15,Sheath Rot,None
+Tomato,Yellow,Yes,69,25,Tomato Mosaic Virus,Low
+Potato,Yellow,No,81,22,Sheath Rot,High
+Wheat,Brown,No,62,21,Healthy,Medium
+Wheat,Green,No,78,28,Late Blight,High
+Wheat,Brown,No,77,31,Healthy,None
+Potato,Yellow,Yes,77,30,Bacterial Blight,Low
+Rice,Green,Yes,72,30,Septoria Leaf Spot,None
+Wheat,Green,Yes,71,32,Late Blight,Medium
+Potato,Green,Yes,81,25,Bacterial Blight,None
+Wheat,Yellow,No,70,20,Tomato Mosaic Virus,High
+Rice,Brown,No,88,15,Bacterial Blight,Medium
+Rice,Green,Yes,71,34,Sheath Rot,Low
+Wheat,Brown,No,71,21,Sheath Rot,None
+Wheat,Yellow,No,90,20,Blast,Medium
+Rice,Brown,No,71,23,Septoria Leaf Spot,Medium
+Tomato,Green,Yes,62,15,Septoria Leaf Spot,None
+Rice,Green,No,77,33,Tomato Mosaic Virus,None
+Wheat,Brown,No,71,21,Leaf Rust,High
+Wheat,Brown,No,73,32,Tomato Mosaic Virus,Medium
+Wheat,Green,Yes,80,27,Leaf Rust,High
+Rice,Brown,Yes,79,34,Healthy,High
+Rice,Yellow,No,77,24,Healthy,High
+Wheat,Brown,No,85,17,Tomato Mosaic Virus,None
+Wheat,Yellow,Yes,63,30,Blast,High
+Potato,Yellow,Yes,61,24,Blast,Low
+Wheat,Yellow,Yes,67,21,Tomato Mosaic Virus,Medium
+Potato,Yellow,Yes,60,34,Sheath Rot,Low
+Potato,Green,No,85,30,Healthy,Low
+Maize,Green,Yes,82,29,Leaf Rust,Low
+Rice,Green,No,67,27,Leaf Rust,None
+Tomato,Green,Yes,86,19,Late Blight,None
+Rice,Green,Yes,73,16,Tomato Mosaic Virus,High
+Potato,Yellow,Yes,77,26,Leaf Rust,High
+Wheat,Yellow,No,70,30,Leaf Rust,High
+Tomato,Brown,No,84,29,Septoria Leaf Spot,Low
+Potato,Yellow,Yes,71,16,Leaf Rust,Medium
+Wheat,Green,No,66,23,Blast,Low
+Potato,Brown,No,77,35,Tomato Mosaic Virus,High
+Potato,Brown,Yes,90,28,Late Blight,High
+Tomato,Green,Yes,76,30,Tomato Mosaic Virus,Medium
+Rice,Yellow,No,84,31,Sheath Rot,None
+Tomato,Brown,No,82,20,Sheath Rot,None
+Wheat,Brown,Yes,67,17,Healthy,High
+Maize,Green,No,86,18,Healthy,High
+Potato,Green,No,84,33,Septoria Leaf Spot,High
+Rice,Green,No,84,17,Bacterial Blight,Low
+Maize,Yellow,No,78,19,Leaf Rust,Low
+Tomato,Green,No,86,23,Tomato Mosaic Virus,None
+Rice,Green,Yes,70,35,Septoria Leaf Spot,Medium
+Rice,Yellow,No,62,20,Tomato Mosaic Virus,Low
+Wheat,Brown,Yes,80,27,Leaf Rust,None
+Rice,Yellow,Yes,87,24,Blast,Low
+Tomato,Brown,No,80,16,Late Blight,None
+Wheat,Green,Yes,81,17,Sheath Rot,None
+Maize,Yellow,No,72,31,Septoria Leaf Spot,None
+Maize,Brown,No,85,28,Septoria Leaf Spot,High
+Rice,Yellow,No,65,35,Sheath Rot,Medium
+Wheat,Yellow,No,71,18,Leaf Rust,Medium
+Tomato,Green,No,70,29,Leaf Rust,Medium
+Tomato,Brown,Yes,63,18,Tomato Mosaic Virus,High
+Rice,Brown,Yes,85,15,Tomato Mosaic Virus,High
+Maize,Brown,No,73,23,Septoria Leaf Spot,Low
+Tomato,Brown,Yes,64,20,Sheath Rot,Low
+Potato,Green,Yes,70,27,Bacterial Blight,Medium
+Potato,Green,No,64,15,Leaf Rust,None
+Rice,Yellow,No,79,16,Sheath Rot,None
+Maize,Yellow,Yes,64,21,Sheath Rot,Medium
+Tomato,Brown,No,82,30,Healthy,High
+Tomato,Brown,Yes,83,33,Leaf Rust,Medium
+Wheat,Green,No,85,20,Blast,High
+Rice,Yellow,No,79,20,Leaf Rust,High
+Wheat,Green,Yes,79,35,Leaf Rust,High
+Tomato,Green,Yes,89,24,Leaf Rust,Medium
+Tomato,Green,No,71,25,Septoria Leaf Spot,None
+Maize,Brown,Yes,85,18,Blast,Medium
+Potato,Yellow,Yes,88,24,Blast,None
+Rice,Green,Yes,66,25,Tomato Mosaic Virus,High
+Maize,Yellow,Yes,66,32,Bacterial Blight,Low
+Tomato,Yellow,No,60,22,Sheath Rot,Low

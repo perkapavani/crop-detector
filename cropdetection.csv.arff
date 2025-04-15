@@ -1,0 +1,111 @@
+@relation cropdetection-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+
+@attribute 'Crop Type' {Wheat,Rice,Tomato,Potato,Maize}
+@attribute 'Leaf Color' {Yellow,Brown,Green}
+@attribute 'Spots on Leaves' {No,Yes}
+@attribute 'Humidity (\%)' {'\'(-inf-0.1]\'','\'(0.1-0.2]\'','\'(0.2-0.3]\'','\'(0.3-0.4]\'','\'(0.4-0.5]\'','\'(0.5-0.6]\'','\'(0.6-0.7]\'','\'(0.7-0.8]\'','\'(0.8-0.9]\'','\'(0.9-inf)\''}
+@attribute 'Temperature (°C)' {'\'(-inf-0.1]\'','\'(0.1-0.2]\'','\'(0.2-0.3]\'','\'(0.3-0.4]\'','\'(0.4-0.5]\'','\'(0.5-0.6]\'','\'(0.6-0.7]\'','\'(0.7-0.8]\'','\'(0.8-0.9]\'','\'(0.9-inf)\''}
+@attribute 'Disease Name' {Healthy,'Septoria Leaf Spot','Leaf Rust','Sheath Rot','Tomato Mosaic Virus','Bacterial Blight','Late Blight',Blast}
+@attribute 'Severity Level' {High,None,Medium,Low}
+
+@data
+Wheat,Yellow,No,'\'(0.8-0.9]\'','\'(0.6-0.7]\'',Healthy,High
+Rice,Yellow,Yes,'\'(0.2-0.3]\'','\'(0.4-0.5]\'','Septoria Leaf Spot',None
+Wheat,Brown,Yes,'\'(0.3-0.4]\'','\'(0.4-0.5]\'',Healthy,Medium
+Tomato,Green,Yes,'\'(-inf-0.1]\'','\'(0.9-inf)\'','Leaf Rust',None
+Potato,Yellow,Yes,'\'(-inf-0.1]\'','\'(0.6-0.7]\'','Sheath Rot',High
+Tomato,Yellow,Yes,'\'(0.8-0.9]\'','\'(0.3-0.4]\'',Healthy,Low
+Rice,Green,Yes,'\'(0.2-0.3]\'','\'(0.2-0.3]\'','Tomato Mosaic Virus',High
+Potato,Brown,Yes,'\'(0.5-0.6]\'','\'(0.7-0.8]\'','Sheath Rot',High
+Rice,Brown,No,'\'(0.4-0.5]\'','\'(0.1-0.2]\'','Bacterial Blight',High
+Rice,Yellow,No,'\'(0.4-0.5]\'','\'(0.3-0.4]\'','Bacterial Blight',Low
+Wheat,Brown,No,'\'(-inf-0.1]\'','\'(0.5-0.6]\'','Sheath Rot',Low
+Potato,Brown,Yes,'\'(0.9-inf)\'','\'(0.7-0.8]\'','Septoria Leaf Spot',High
+Wheat,Brown,Yes,'\'(0.8-0.9]\'','\'(0.7-0.8]\'','Late Blight',None
+Potato,Green,No,'\'(-inf-0.1]\'','\'(0.1-0.2]\'','Sheath Rot',High
+Maize,Brown,No,'\'(0.3-0.4]\'','\'(0.5-0.6]\'','Late Blight',None
+Wheat,Brown,Yes,'\'(0.9-inf)\'','\'(0.4-0.5]\'','Leaf Rust',None
+Rice,Brown,No,'\'(-inf-0.1]\'','\'(0.7-0.8]\'','Bacterial Blight',None
+Tomato,Green,Yes,'\'(0.4-0.5]\'','\'(0.8-0.9]\'','Sheath Rot',High
+Potato,Green,No,'\'(0.6-0.7]\'','\'(0.6-0.7]\'','Late Blight',Low
+Wheat,Green,No,'\'(-inf-0.1]\'','\'(0.5-0.6]\'','Septoria Leaf Spot',Medium
+Potato,Brown,Yes,'\'(0.7-0.8]\'','\'(-inf-0.1]\'','Sheath Rot',None
+Tomato,Yellow,Yes,'\'(0.2-0.3]\'','\'(0.4-0.5]\'','Tomato Mosaic Virus',Low
+Potato,Yellow,No,'\'(0.6-0.7]\'','\'(0.3-0.4]\'','Sheath Rot',High
+Wheat,Brown,No,'\'(-inf-0.1]\'','\'(0.2-0.3]\'',Healthy,Medium
+Wheat,Green,No,'\'(0.5-0.6]\'','\'(0.6-0.7]\'','Late Blight',High
+Wheat,Brown,No,'\'(0.5-0.6]\'','\'(0.7-0.8]\'',Healthy,None
+Potato,Yellow,Yes,'\'(0.5-0.6]\'','\'(0.7-0.8]\'','Bacterial Blight',Low
+Rice,Green,Yes,'\'(0.3-0.4]\'','\'(0.7-0.8]\'','Septoria Leaf Spot',None
+Wheat,Green,Yes,'\'(0.3-0.4]\'','\'(0.8-0.9]\'','Late Blight',Medium
+Potato,Green,Yes,'\'(0.6-0.7]\'','\'(0.4-0.5]\'','Bacterial Blight',None
+Wheat,Yellow,No,'\'(0.3-0.4]\'','\'(0.2-0.3]\'','Tomato Mosaic Virus',High
+Rice,Brown,No,'\'(0.9-inf)\'','\'(-inf-0.1]\'','Bacterial Blight',Medium
+Rice,Green,Yes,'\'(0.3-0.4]\'','\'(0.9-inf)\'','Sheath Rot',Low
+Wheat,Brown,No,'\'(0.3-0.4]\'','\'(0.2-0.3]\'','Sheath Rot',None
+Wheat,Yellow,No,'\'(0.9-inf)\'','\'(0.2-0.3]\'',Blast,Medium
+Rice,Brown,No,'\'(0.3-0.4]\'','\'(0.3-0.4]\'','Septoria Leaf Spot',Medium
+Tomato,Green,Yes,'\'(-inf-0.1]\'','\'(-inf-0.1]\'','Septoria Leaf Spot',None
+Rice,Green,No,'\'(0.5-0.6]\'','\'(0.8-0.9]\'','Tomato Mosaic Virus',None
+Wheat,Brown,No,'\'(0.3-0.4]\'','\'(0.2-0.3]\'','Leaf Rust',High
+Wheat,Brown,No,'\'(0.4-0.5]\'','\'(0.8-0.9]\'','Tomato Mosaic Virus',Medium
+Wheat,Green,Yes,'\'(0.6-0.7]\'','\'(0.5-0.6]\'','Leaf Rust',High
+Rice,Brown,Yes,'\'(0.6-0.7]\'','\'(0.9-inf)\'',Healthy,High
+Rice,Yellow,No,'\'(0.5-0.6]\'','\'(0.4-0.5]\'',Healthy,High
+Wheat,Brown,No,'\'(0.8-0.9]\'','\'(-inf-0.1]\'','Tomato Mosaic Virus',None
+Wheat,Yellow,Yes,'\'(-inf-0.1]\'','\'(0.7-0.8]\'',Blast,High
+Potato,Yellow,Yes,'\'(-inf-0.1]\'','\'(0.4-0.5]\'',Blast,Low
+Wheat,Yellow,Yes,'\'(0.2-0.3]\'','\'(0.2-0.3]\'','Tomato Mosaic Virus',Medium
+Potato,Yellow,Yes,'\'(-inf-0.1]\'','\'(0.9-inf)\'','Sheath Rot',Low
+Potato,Green,No,'\'(0.8-0.9]\'','\'(0.7-0.8]\'',Healthy,Low
+Maize,Green,Yes,'\'(0.7-0.8]\'','\'(0.6-0.7]\'','Leaf Rust',Low
+Rice,Green,No,'\'(0.2-0.3]\'','\'(0.5-0.6]\'','Leaf Rust',None
+Tomato,Green,Yes,'\'(0.8-0.9]\'','\'(0.1-0.2]\'','Late Blight',None
+Rice,Green,Yes,'\'(0.4-0.5]\'','\'(-inf-0.1]\'','Tomato Mosaic Virus',High
+Potato,Yellow,Yes,'\'(0.5-0.6]\'','\'(0.5-0.6]\'','Leaf Rust',High
+Wheat,Yellow,No,'\'(0.3-0.4]\'','\'(0.7-0.8]\'','Leaf Rust',High
+Tomato,Brown,No,'\'(0.7-0.8]\'','\'(0.6-0.7]\'','Septoria Leaf Spot',Low
+Potato,Yellow,Yes,'\'(0.3-0.4]\'','\'(-inf-0.1]\'','Leaf Rust',Medium
+Wheat,Green,No,'\'(0.1-0.2]\'','\'(0.3-0.4]\'',Blast,Low
+Potato,Brown,No,'\'(0.5-0.6]\'','\'(0.9-inf)\'','Tomato Mosaic Virus',High
+Potato,Brown,Yes,'\'(0.9-inf)\'','\'(0.6-0.7]\'','Late Blight',High
+Tomato,Green,Yes,'\'(0.5-0.6]\'','\'(0.7-0.8]\'','Tomato Mosaic Virus',Medium
+Rice,Yellow,No,'\'(0.7-0.8]\'','\'(0.7-0.8]\'','Sheath Rot',None
+Tomato,Brown,No,'\'(0.7-0.8]\'','\'(0.2-0.3]\'','Sheath Rot',None
+Wheat,Brown,Yes,'\'(0.2-0.3]\'','\'(-inf-0.1]\'',Healthy,High
+Maize,Green,No,'\'(0.8-0.9]\'','\'(0.1-0.2]\'',Healthy,High
+Potato,Green,No,'\'(0.7-0.8]\'','\'(0.8-0.9]\'','Septoria Leaf Spot',High
+Rice,Green,No,'\'(0.7-0.8]\'','\'(-inf-0.1]\'','Bacterial Blight',Low
+Maize,Yellow,No,'\'(0.5-0.6]\'','\'(0.1-0.2]\'','Leaf Rust',Low
+Tomato,Green,No,'\'(0.8-0.9]\'','\'(0.3-0.4]\'','Tomato Mosaic Virus',None
+Rice,Green,Yes,'\'(0.3-0.4]\'','\'(0.9-inf)\'','Septoria Leaf Spot',Medium
+Rice,Yellow,No,'\'(-inf-0.1]\'','\'(0.2-0.3]\'','Tomato Mosaic Virus',Low
+Wheat,Brown,Yes,'\'(0.6-0.7]\'','\'(0.5-0.6]\'','Leaf Rust',None
+Rice,Yellow,Yes,'\'(0.8-0.9]\'','\'(0.4-0.5]\'',Blast,Low
+Tomato,Brown,No,'\'(0.6-0.7]\'','\'(-inf-0.1]\'','Late Blight',None
+Wheat,Green,Yes,'\'(0.6-0.7]\'','\'(-inf-0.1]\'','Sheath Rot',None
+Maize,Yellow,No,'\'(0.3-0.4]\'','\'(0.7-0.8]\'','Septoria Leaf Spot',None
+Maize,Brown,No,'\'(0.8-0.9]\'','\'(0.6-0.7]\'','Septoria Leaf Spot',High
+Rice,Yellow,No,'\'(0.1-0.2]\'','\'(0.9-inf)\'','Sheath Rot',Medium
+Wheat,Yellow,No,'\'(0.3-0.4]\'','\'(0.1-0.2]\'','Leaf Rust',Medium
+Tomato,Green,No,'\'(0.3-0.4]\'','\'(0.6-0.7]\'','Leaf Rust',Medium
+Tomato,Brown,Yes,'\'(-inf-0.1]\'','\'(0.1-0.2]\'','Tomato Mosaic Virus',High
+Rice,Brown,Yes,'\'(0.8-0.9]\'','\'(-inf-0.1]\'','Tomato Mosaic Virus',High
+Maize,Brown,No,'\'(0.4-0.5]\'','\'(0.3-0.4]\'','Septoria Leaf Spot',Low
+Tomato,Brown,Yes,'\'(0.1-0.2]\'','\'(0.2-0.3]\'','Sheath Rot',Low
+Potato,Green,Yes,'\'(0.3-0.4]\'','\'(0.5-0.6]\'','Bacterial Blight',Medium
+Potato,Green,No,'\'(0.1-0.2]\'','\'(-inf-0.1]\'','Leaf Rust',None
+Rice,Yellow,No,'\'(0.6-0.7]\'','\'(-inf-0.1]\'','Sheath Rot',None
+Maize,Yellow,Yes,'\'(0.1-0.2]\'','\'(0.2-0.3]\'','Sheath Rot',Medium
+Tomato,Brown,No,'\'(0.7-0.8]\'','\'(0.7-0.8]\'',Healthy,High
+Tomato,Brown,Yes,'\'(0.7-0.8]\'','\'(0.8-0.9]\'','Leaf Rust',Medium
+Wheat,Green,No,'\'(0.8-0.9]\'','\'(0.2-0.3]\'',Blast,High
+Rice,Yellow,No,'\'(0.6-0.7]\'','\'(0.2-0.3]\'','Leaf Rust',High
+Wheat,Green,Yes,'\'(0.6-0.7]\'','\'(0.9-inf)\'','Leaf Rust',High
+Tomato,Green,Yes,'\'(0.9-inf)\'','\'(0.4-0.5]\'','Leaf Rust',Medium
+Tomato,Green,No,'\'(0.3-0.4]\'','\'(0.4-0.5]\'','Septoria Leaf Spot',None
+Maize,Brown,Yes,'\'(0.8-0.9]\'','\'(0.1-0.2]\'',Blast,Medium
+Potato,Yellow,Yes,'\'(0.9-inf)\'','\'(0.4-0.5]\'',Blast,None
+Rice,Green,Yes,'\'(0.1-0.2]\'','\'(0.4-0.5]\'','Tomato Mosaic Virus',High
+Maize,Yellow,Yes,'\'(0.1-0.2]\'','\'(0.8-0.9]\'','Bacterial Blight',Low
+Tomato,Yellow,No,'\'(-inf-0.1]\'','\'(0.3-0.4]\'','Sheath Rot',Low

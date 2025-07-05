@@ -10,6 +10,12 @@ This is a Flask-based application for **crop disease detection** and **data prep
 
 ## 📁 Project Structure
 
+## 📈 Association Rule Mining Output
+
+This diagram shows the output of the Apriori algorithm applied to the crop dataset.
+
+![Apriori Result](https://github.com/perkapavani/crop-detector/blob/main/apriori_result.png?raw=true)
+
 
 ## 🚀 Features
 
@@ -32,3 +38,4 @@ This is a Flask-based application for **crop disease detection** and **data prep
 # Step 2: Run the app
 python app.py
 Then open your browser at: http://localhost:5000
+

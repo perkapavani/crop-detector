@@ -1,3 +1,4 @@
+# Import required libraries
 from flask import Flask, request, jsonify
 import pandas as pd
 import numpy as np
@@ -6,6 +7,7 @@ from sklearn.impute import SimpleImputer
 from mlxtend.frequent_patterns import apriori, fpgrowth
 from sklearn.tree import DecisionTreeClassifier
 
+# Initialize Flask app
 app = Flask(__name__)
 
 # Helper functions for data preprocessing and classification
@@ -72,3 +74,6 @@ def upload_file():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+

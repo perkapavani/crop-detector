@@ -31,9 +31,33 @@ This diagram shows the output of the Apriori algorithm applied to the crop datas
 - ID3, Apriori, FP-Growth
 - HTML/CSS (for UI)
 
-## 🛠 How to Run
+## Project Structure
+- app.py : Main Flask application
+- model/ : Trained ML model files
+- templates/ : HTML files
+- static/ : CSS and assets
+
+## How to Run the Project
+1. Clone the repository
+2. Install required packages:
+   pip install -r requirements.txt
+3. Run the Flask app:
+   python app.py
+4. Open browser and go to:
+   http://127.0.0.1:5000/
+
+## Features
+- Predicts crop disease based on input
+- Simple and user-friendly interface
+- Fast response using trained ML model
+
+## Future Improvements
+- Improve UI
+- Add more crop datasets
+- Better error handling
 
 ```bash
+
 # Step 1: Activate virtual environment (if any)
 # Step 2: Run the app
 python app.py

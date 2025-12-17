@@ -39,6 +39,33 @@ def classify_data(df, classifier):
         return {"error": "Classifier not supported"}
 
 @app.route('/upload', methods=['POST'])
+@app.route('/predict', methods=['POST'])
+def predict():
+    try:
+        input_data = list(request.form.values())
+
+        # Basic validation: check for empty inputs
+        if not input_data or '' in input_data:
+            return render_template(
+                'result.html',
+                prediction="Please provide all required input values."
+            )
+
+        # Make prediction
+        prediction = model.predict([input_data])
+
+        return render_template(
+            'result.html',
+            prediction=prediction
+        )
+
+    except Exception as e:
+        # Handle unexpected errors gracefully
+        return render_template(
+            'result.html',
+            prediction="An error occurred while processing your request."
+        )
+
 def upload_file():
     if 'file' not in request.files:
         return jsonify({"error": "No file part"}), 400
@@ -72,3 +99,4 @@ def upload_file():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
